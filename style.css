@@ -1,0 +1,69 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(241, 249, 224);
+  
+}
+
+.display-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+    border-radius: 5px;
+    width: 30rem;
+    height: 12rem;
+    background-color: rgb(243, 249, 231);
+    margin-top: 10px;
+}
+
+#display {
+    font-size: 7em;
+}
+
+.button-container {
+    width: 30rem;
+    height: 10rem;
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.title-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+#plusbutton {
+  background-color: rgb(252, 210, 74);
+  width: 20rem;
+  height: 10rem;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 5em;
+}
+
+#minusbutton {
+     background-color: rgb(51, 140, 248);
+  width: 9rem;
+  height: 10rem;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 5em;
+}
+
+#reset {
+    background-color: red;
+     border-radius: 3px;
+     border: 0.5px solid black;
+     padding: 3px;
+}
+/* note: ทำปุ่มบวกสีเหลือง ปุ่มลบสีแดง มีเงาดูเด้งๆน่ากด */

@@ -1,34 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Stock check</title>
-    <link rel="stylesheet" href="./style.css">
-</head>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
 
-<body>
-    <header>
-        <h1>Stock check</h1>
-    </header>
-    <div class="container">
+  <body>
+    <button type="button" id="nav-btn">
+      <span>Stock Check</span>
+      <svg
+        width="28px"
+        height="28px"
+        viewBox="0 -3 21 21"
+        version="1.1"
+        xmlns="http://www.w3.org/2000/svg"
+        xmlns:xlink="http://www.w3.org/1999/xlink"
+        fill="#000000"
+        stroke="#000000"
+      >
+        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+        <g
+          id="SVGRepo_tracerCarrier"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        ></g>
+        <g id="SVGRepo_iconCarrier">
+          <title>list [#1496]</title>
+          <desc>Created with Sketch.</desc>
+          <defs></defs>
+          <g
+            id="Page-1"
+            stroke="none"
+            stroke-width="1"
+            fill="none"
+            fill-rule="evenodd"
+          >
+            <g
+              id="Dribbble-Light-Preview"
+              transform="translate(-219.000000, -322.000000)"
+              fill="#000000"
+            >
+              <g id="icons" transform="translate(56.000000, 160.000000)">
+                <path
+                  d="M163,177 L166.15,177 L166.15,174 L163,174 L163,177 Z M168.25,177 L184,177 L184,175 L168.25,175 L168.25,177 Z M163,171 L166.15,171 L166.15,168 L163,168 L163,171 Z M168.25,171 L184,171 L184,169 L168.25,169 L168.25,171 Z M163,165 L166.15,165 L166.15,162 L163,162 L163,165 Z M168.25,165 L184,165 L184,163 L168.25,163 L168.25,165 Z"
+                  id="list-[#1496]"
+                ></path>
+              </g>
+            </g>
+          </g>
+        </g>
+      </svg>
+    </button>
+    <div class="content">
+      <div class="navbar-container">
+        <span>Record history</span>
+        <div id="history-display"></div>
+        <div class="navbar-content">
+          <ul>
+            <li><button id="export-btn">Export to Google Sheet</button></li>
+          </ul>
+        </div>
+      </div>
+      <div class="container">
         <div class="title-container">
-            <label for="title">
-                Title:
-                <input type="text" id="title">
-            </label>
-            <button type="button" id="reset"> Reset </button>
+          <label for="titlename">
+            Title:
+            <input type="text" id="titlename" />
+          </label>
+          <button type="button" id="reset">Clear</button>
         </div>
         <div class="display-container">
-            <span id="display">0</span>
+          <span id="display-num">0</span>
         </div>
         <div class="button-container">
-            <button type="button" id="plusbutton"> + </button>
-            <button type="button" id="minusbutton"> - </button>
+          <button type="button" id="plusbutton">+</button>
+          <button type="button" id="minusbutton">
+            <span> - </span>
+          </button>
         </div>
+        <button id="record-btn">Record</button>
+      </div>
     </div>
-</body>
-<script src="./app.js"></script>
-
+  </body>
+  <script src="./app.js"></script>
 </html>
+<!-- note:have a problem with navbar i want content in the center but for some reason the navbar contain block the way -->
+ <!-- i want to move it to the left so the main content can be at center -->
+  <!-- need the make navbtn to be responsive and add the style to the rest element -->
